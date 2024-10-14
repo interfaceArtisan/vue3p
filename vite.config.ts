@@ -4,8 +4,9 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/vue3p/',
   build: {
-    outDir: 'docs',
+    outDir: 'dist', // 默认为dist，可不配置
   },
   server: {
     proxy: {
