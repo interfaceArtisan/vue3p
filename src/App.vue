@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router';
     <RouterLink to="/chinamap">中国地图</RouterLink>
     <RouterLink to="/testcrossorigin">测试跨域</RouterLink>
     <RouterLink to="/testbem">测试bem</RouterLink>
-    <RouterLink to="/largescreen">大屏展示</RouterLink>
+    <RouterLink to="/largescreen">大屏展示echarts</RouterLink>
 
   </nav>
 
