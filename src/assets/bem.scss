@@ -1,0 +1,38 @@
+$namespace: 'xx' !default;
+$block-sel: '-' !default;
+$element-sel: '__' !default;
+$modifier-sel: '--' !default;
+
+@mixin b($block) {
+    $b: $namespace + $block-sel + $block;
+    .#{$b} {
+        @content;
+    }
+}
+
+@mixin e($el) {
+    $selector: '&';
+    @at-root {
+        #{$selector + $element-sel + $el} {
+            @content;
+        }
+    }
+    
+}
+
+@mixin m($modifier) {
+    $selector: '&';
+    @at-root {
+        #{$selector + $modifier-sel + $modifier} {
+            @content;
+        }
+    }
+}
+
+@mixin bfc {
+    overflow: hidden;
+}
+
+@mixin pinkbg {
+    background-color: pink;
+}

@@ -1,0 +1,4 @@
+- 绘制中国地图
+- 测试跨域请求
+    - axios的type文件在\node_modules\axios\index.d.ts，不过刚安装的时候找不到，后来在node_modules/.vite/deps下找到的，反正多找找吧
+    - 使用axios的实例的request方法时，传入了一个错误的data(当时传的是对象)，然后跨域请求一直无法到达服务器，浏览器也会报跨域的错误
