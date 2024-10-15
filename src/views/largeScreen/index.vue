@@ -114,19 +114,19 @@ onMounted(() => {
     background: url(../../assets/images/head_bg.png) no-repeat;
     background-size: cover;
     h1 {
-        height: 100px;
+        height: 1.25rem;
         text-align: center;
         color: #fff;
-        font-size: 38px;
-        line-height: 100px;
+        font-size: .475rem;
+        line-height: 1.25rem;
     }
     .show-time {
         position: absolute;
-        right: 30px;
+        right: .375rem;
         top: 0;
         color: rgba(255, 255, 255, .7);
-        font-size: 20px;
-        line-height: 100px;
+        font-size: .25rem;
+        line-height: 1.25rem;
     }
 }
 

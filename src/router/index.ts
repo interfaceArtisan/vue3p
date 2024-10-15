@@ -18,7 +18,10 @@ const routes = [{
   component: () => import('../views/TestBem.vue')
 }, {
   path: '/largescreen',
-  component: LargeScreen
+  component: LargeScreen,
+  meta: {
+    showNavBar: false
+  }
 }]
 
 export const router = createRouter({
