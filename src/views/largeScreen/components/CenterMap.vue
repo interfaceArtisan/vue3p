@@ -333,6 +333,9 @@ onMounted(() => {
         // color: ['#00467F', '#A5CC82'] // 蓝绿
         // color: ['#00467F', '#A5CC82'] // 蓝绿
       },
+      textStyle: {
+        color: '#fff'
+      }
     },
     geo: {
       show: true,

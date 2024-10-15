@@ -112,6 +112,7 @@ onMounted(() => {
 .header {
     position: relative;
     background: url(../../assets/images/head_bg.png) no-repeat;
+    background-size: cover;
     h1 {
         height: 100px;
         text-align: center;

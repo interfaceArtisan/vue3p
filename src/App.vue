@@ -27,9 +27,11 @@ main {
 nav {
   display: flex;
   justify-content: center;
-  border: 1px solid pink;
-  border-radius: 5px;
+  /* border: 1px solid pink; */
+  /* border-radius: 5px; */
   color: cc(G01);
+  background: rgb(0, 10, 55);
+  box-shadow: 0px 8px 13px 5px rgb(20 18 62);
 
   a {
     display: inline-block;
