@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router"
 import ChinaMap from '../views/ChinaMap.vue'
 import TestCrossOrigin from '../views/TestCrossOrigin.vue'
 import LargeScreen from '../views/largeScreen/index.vue'
+import ManageSystem from '../views/managementSystem/index.vue'
 
 const routes = [{
   path: '/',
@@ -15,13 +16,28 @@ const routes = [{
   component: TestCrossOrigin
 }, {
   path: '/testbem',
-  component: () => import('../views/TestBem.vue')
+  component: () => import('../views/TestBem.vue'),
+  children: [{
+    path: 'test1',
+    component: () => import('../views/Test.vue')
+  }]
 }, {
   path: '/largescreen',
   component: LargeScreen,
   meta: {
     showNavBar: false
   }
+}, {
+  path: '/managesystem',
+  component: ManageSystem,
+  
+  children: [{
+    path: 'loadproject',
+    component: () => import('../views/managementSystem/components/projectmanage/index.vue')
+  }],
+  meta: {
+    showNavBar: false
+  },
 }]
 
 export const router = createRouter({

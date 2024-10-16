@@ -6,6 +6,8 @@
             <div class="xx-block__body--error">xx-block__body--error</div>
 
         </div>
+
+        <router-view></router-view>
     </div>
 </template>
 

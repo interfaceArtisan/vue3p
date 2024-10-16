@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router';
     <RouterLink to="/testcrossorigin">测试跨域</RouterLink>
     <RouterLink to="/testbem">测试bem</RouterLink>
     <RouterLink to="/largescreen">大屏展示echarts</RouterLink>
-
+    <RouterLink to="/managesystem">一个管理系统</RouterLink>
   </nav>
 
   <main>
