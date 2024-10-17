@@ -3,7 +3,7 @@
     <div style="width: 100%; height: 100%">
       <el-tabs v-model="activeName" type="border-card">
         <el-tab-pane
-          v-for="(item, index) in projectArr"
+          v-for="(item) in projectArr"
           :key="item.brand"
           :label="item.brand"
           :name="item.name"
@@ -20,7 +20,9 @@
 </template>
 
 <script setup lang="ts">
-import { projectArr } from '@/mockData/projectManageMenu.js'
+import { projectArr } from '@/mockData/projectManageMenu.ts'
+// import { projectArr } from '../../../../mockData/projectManageMenu.ts'
+
 import ProjectInfo  from './ProjectInfo.vue'
 import { ref } from 'vue'
 

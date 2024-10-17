@@ -46,19 +46,19 @@
             <template #default="scope">
               <el-button
                 size="small"
-                @click="onRoleEdit(scope.$index, scope.row)"
+                @click="onRoleEdit(scope.$index)"
                 >编辑</el-button
               >
               <el-button
                 size="small"
                 type="danger"
-                @click="onRoleDelete(scope.$index, scope.row)"
+                @click="onRoleDelete(scope.$index)"
                 >删除</el-button
               >
               <el-button
                 size="small"
                 type="success"
-                @click="onRoleRights(scope.$index, scope.row)"
+                @click="onRoleRights()"
                 >权限</el-button
               >
             </template>
@@ -111,19 +111,19 @@
               <el-button
                 size="small"
                 type="danger"
-                @click="onUserDelete(scope.$index, scope.row)"
+                @click="onUserDelete(scope.$index)"
                 >删除</el-button
               >
               <el-button
                 size="small"
                 type="danger"
-                @click="onUserReset(scope.$index, scope.row)"
+                @click="onUserReset()"
                 >重置密码</el-button
               >
               <el-button
                 size="small"
                 type="success"
-                @click="onUserRights(scope.$index, scope.row)"
+                @click="onUserRights()"
                 >权限</el-button
               >
             </template>
@@ -172,29 +172,28 @@ const userData = reactive([
   },
 ])
 
-const onRoleEdit = (index, role) => {
+
+const onRoleEdit = (index: number) => {
   roleData[index].isEdit = true
-  console.log('index:', index, 'role:', role)
 }
-const onRoleDelete = (index, row) => {
+const onRoleDelete = (index: number) => {
   roleData.splice(index, 1)
-  console.log('index:', index, 'row:', row)
 }
 const onRoleRights = () => {}
-const onUserEdit = (index, row) => {
+const onUserEdit = (index: number, row: any) => {
   userData[index].isEdit = true
   console.log('index:', index, 'row:', row)
 }
-const onUserDelete = (index) => {
+const onUserDelete = (index: number) => {
   userData.splice(index, 1)
 }
 const onUserReset = () => {}
 const onUserRights = () => {}
-const onChangeStatus = (status, index) => {
+const onChangeStatus = (status: any, index: number) => {
   console.log('status:', status)
   userData[index].status = status
 }
-const onTabClick = (val) => {
+const onTabClick = (val: any) => {
   console.log('val:', val)
 }
 const onAdd = () => {

@@ -17,10 +17,6 @@ const routes = [{
 }, {
   path: '/testbem',
   component: () => import('../views/TestBem.vue'),
-  children: [{
-    path: 'test1',
-    component: () => import('../views/Test.vue')
-  }]
 }, {
   path: '/largescreen',
   component: LargeScreen,

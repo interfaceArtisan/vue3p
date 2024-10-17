@@ -18,7 +18,7 @@
           check-on-click-node
           :data-index="key"
           :data="item.files"
-          @node-click="handleNodeClick(arguments)"
+          @node-click="handleNodeClick"
           @node-contextmenu="onClickRight"
         >
           <template #default="scope">
@@ -48,7 +48,7 @@ const props = defineProps({
 })
 const activename = ref('')
 
-const handleNodeClick = () => {}
+const handleNodeClick = (val: any) => { console.log(val) }
 
 const onClickRight = () => {}
 </script>

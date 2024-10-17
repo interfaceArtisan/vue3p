@@ -13,8 +13,6 @@
         :style="{ 'background-color': bgColor }"
         id="content"
       ></div>
-      <!-- 左侧项目管理窗口，可随意拖动 -->
-      <!-- <ProjectManage ref="projectManage" /> -->
       <UserRole v-if="selectToolBarKey === 'userRole'" @close="onCloseDialog"></UserRole>
     </div>
     <router-view />
@@ -24,7 +22,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import HeaderComp from './components/Header.vue'
-import ProjectManage from './components/projectmanage/index.vue'
 import UserRole from './components/UserRole.vue'
 
 let bgColor = ref('#e8e9ea')

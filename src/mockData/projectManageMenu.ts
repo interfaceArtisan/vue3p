@@ -1,4 +1,4 @@
-const emptyProjectInfo1 = [{
+/* const emptyProjectInfo1 = [{
     title: '原始文件',
     files: []
  }, {
@@ -23,7 +23,7 @@ const emptyProjectInfo1 = [{
  }, {
      title: '模型文件',
      files: []
- }]
+ }] */
  const projectInfo1 = [{
      title: '原始文件',
      files: [{
@@ -123,7 +123,7 @@ const emptyProjectInfo1 = [{
          }]
      }]
  }]
- const contextMenu = [{
+ /* const contextMenu = [{
      function: '打开文件',
      func: 'open'
  }, {
@@ -148,7 +148,7 @@ const emptyProjectInfo1 = [{
      function: '自动分类',
      func: 'classify'
  }]
-
+ */
 export const projectArr = [{
     name: '0',
     brand: '48度带',
